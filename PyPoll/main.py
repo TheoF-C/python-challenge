@@ -16,8 +16,7 @@ with open('election_analysis.txt', mode='w') as out:
     out.write(f'Total Votes: {len(voter_info)}\n')
     out.write('-------------------------\n')
 
-    candidates = list(set(voter_info))
-    vote_tally = tally(candidates, voter_info)
+    vote_tally = tally(set(voter_info), voter_info)
     candidates = [k for k, v in sorted(vote_tally.items(), reverse=True, key=lambda item: item[1])]
     for candidate in candidates:
         out.write(f'{candidate}: {round(100*vote_tally[candidate]/len(voter_info),3)}% ({vote_tally[candidate]})\n')
