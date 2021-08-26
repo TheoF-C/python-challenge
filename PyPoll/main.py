@@ -23,7 +23,7 @@ with open('election_analysis.txt', mode='w') as out:
         out.write(f'{candidate}: {round(100*vote_tally[candidate]/len(voter_info),3)}% ({vote_tally[candidate]})\n')
 
     out.write('-------------------------\n')
-    out.write(f'Winner: {max([item[1], item[0]] for item in vote_tally.items())[1]}\n')
+    out.write(f'Winner: {candidates[0]}\n')
     out.write('-------------------------')
 
 
