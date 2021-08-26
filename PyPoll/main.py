@@ -2,7 +2,10 @@ import csv
 
 
 def tally(data_lst):
-    return {c: sum(1 for data in data_lst if data == c) for c in set(data_lst)}
+    data_dct = {c: 0 for c in set(data_lst)}
+    for i in data_lst:
+        data_dct[i] += 1
+    return data_dct
 
 
 with open('election_data.csv', mode='r') as inp:
