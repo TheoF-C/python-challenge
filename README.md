@@ -2,7 +2,7 @@
 
 ## PyBank
 
-PyBank reads through a csv file containing a companies monthly profits/losses and gives statistics on the data.
+PyBank reads through a csv file containing a companie's monthly profits/losses and gives statistics on the data.
 
 ```python
 Total Months: 86
@@ -14,7 +14,7 @@ Greatest Decrease in Profits: Sep-2013 ($-2196167)
 
 ## PyPoll
 
-The goal of PyPoll is to determine what percent of the total vote each candidate had as well as the winner of the election.
+The goal of PyPoll is to determine the percent of the total vote for candidate as well as the winner of the election.
 
 ```python
 -------------------------
