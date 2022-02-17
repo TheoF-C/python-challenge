@@ -2,7 +2,7 @@
 
 ## PyBank
 
-PyBank reads through a csv file containing a companie's monthly profits/losses and gives statistics on the data.
+PyBank reads through a csv file containing a company's monthly profits/losses and gives statistics on the data.
 
 ```python
 Total Months: 86
